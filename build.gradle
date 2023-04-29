@@ -45,6 +45,41 @@ subprojects {
             name = 'BlameJared Maven (CrT / Bookshelf)'
             url = 'https://maven.blamejared.com'
         }
+
+        maven {
+            name = "CurseMaven"
+            url "https://cursemaven.com"
+            content {
+                includeGroup "curse.maven"
+            }
+        }
+
+        maven {
+            url = "https://maven.theillusivec4.top/"
+        }
+
+        maven {
+            name = "CurseForge"
+            url = "https://minecraft.curseforge.com/api/maven/"
+        }
+
+        maven {
+            name = "JourneyMap (Public)"
+            url = "https://jm.gserv.me/repository/maven-public/"
+        }
+
+        maven {
+            name = "TerraformersMC"
+            url = "https://maven.terraformersmc.com/"
+        }
+
+        maven {
+            name = "Ladysnake Libs"
+            url = "https://ladysnake.jfrog.io/artifactory/mods"
+        }
+
+        maven { url "https://maven.shedaniel.me/" }
+        maven { url "https://maven.terraformersmc.com/releases/" }
     }
 
     tasks.withType(JavaCompile).configureEach {

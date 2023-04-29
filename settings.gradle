@@ -12,5 +12,5 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'MultiLoader'
+rootProject.name = 'seasonhud'
 include("Common", "Fabric", "Forge")

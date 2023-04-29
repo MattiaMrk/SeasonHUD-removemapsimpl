@@ -75,6 +75,43 @@ sourceSets.main.resources.srcDir 'src/generated/resources'
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
     compileOnly project(":Common")
+
+    /Serene Seasons/
+    implementation "curse.maven:serene-seasons-291874:4037228"
+    implementation "curse.maven:serene-seasons-291874:4037230"
+//    compileOnly "curse.maven:serene-seasons-291874:4037231"
+
+    /Curios/
+//    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.2-5.1.1.0")
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.19.2-5.1.1.0:api")
+
+    /Xaero's Minimap/
+    compileOnly fg.deobf("curse.maven:xaeros-minimap-263420:4492932")
+//    implementation fg.deobf("curse.maven:xaeros-minimap-263420:4492932")
+
+    /Xaero's Minimap Fair Play/
+    compileOnly fg.deobf("curse.maven:xaeros-minimap-fair-play-edition-263466:4503434")
+//    implementation fg.deobf("curse.maven:xaeros-minimap-fair-play-edition-263466:4503434")
+
+    /Open Parties and Claims/
+    compileOnly fg.deobf("curse.maven:open-parties-and-claims-636608:4500812")
+//    implementation fg.deobf("curse.maven:open-parties-and-claims-636608:4500812")
+
+    /FTB Chunks/
+    compileOnly fg.deobf("curse.maven:ftb-library-forge-404465:4478919")
+    compileOnly fg.deobf("curse.maven:architectury-api-419699:4476084")
+    compileOnly fg.deobf("curse.maven:ftb-teams-forge-404468:4477315")
+    compileOnly fg.deobf("curse.maven:ftb-chunks-forge-314906:4478935")
+
+//    implementation fg.deobf("curse.maven:ftb-library-forge-404465:4478919")
+//    implementation fg.deobf("curse.maven:architectury-api-419699:4476084")
+//    implementation fg.deobf("curse.maven:ftb-teams-forge-404468:4477315")
+//    implementation fg.deobf("curse.maven:ftb-chunks-forge-314906:4478935")
+
+    /JourneyMap/
+    compileOnly fg.deobf(group: 'info.journeymap', name: 'journeymap-api', version: project.journeymap_api_version_forge, changing: true)
+//    implementation fg.deobf("curse.maven:journeymap-32274:4097953")
+
 }
 
 tasks.withType(JavaCompile) {
